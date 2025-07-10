@@ -1,0 +1,2 @@
+admin carga categorias
+otra tabla de duenios
