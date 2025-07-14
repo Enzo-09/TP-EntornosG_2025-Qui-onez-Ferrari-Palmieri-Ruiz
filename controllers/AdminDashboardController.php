@@ -16,5 +16,8 @@ class AdminDashboardController {
     public function solicitudLocales() {
         require_once __DIR__ . '/../views/admin/solicitudes_creacion_locales.php';
     }
+    public function aprobarPromos() {
+        require_once __DIR__ . '/../views/admin/solicitudes_promociones.php';
+    }
 }
 ?>
