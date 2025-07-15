@@ -20,6 +20,7 @@ body, html {
 .layout-container {
   display: flex;
   height: 100vh;
+  position: relative;
 }
 
 /* Sidebar */
@@ -31,6 +32,10 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 /* Logo */
@@ -76,6 +81,7 @@ header .footer {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  margin-left: 250px;
 }
 
 /* Main */
@@ -84,6 +90,7 @@ main {
   background-color: #f8f9fa;
   padding: 30px;
   overflow-y: auto;
+  margin-left: 250px;
 }
 
 /* Footer */
@@ -92,6 +99,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+  margin-left: 250px;
 }
 
 /* Imagen de prueba (simulación) */
@@ -806,10 +814,33 @@ body#verify hr {
             .local-info {
                 grid-template-columns: 1fr;
             }
+        }
+
+/* Responsive para header fijo */
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 15px;
+  }
+  
+  .content-area {
+    margin-left: 0;
+  }
+  
+  main {
+    margin-left: 0;
+  }
+  
+  footer {
+    margin-left: 0;
+  }
+  
+  .layout-container {
+    flex-direction: column;
+  }
 }
-
-
-
 
 /*container locales*/
 .container-locales {
